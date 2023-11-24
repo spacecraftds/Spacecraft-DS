@@ -1,12 +1,12 @@
 Spacecraft-DS: A Spacecraft Dataset for Key Components Detection and Segmentation via Hardware-in-the-loop Capture
-
-*News：
-
+=====
+News：
+------
       1）2023.11.23 Update 1602 spacecraft images.
       
       2）
-*Spacecraft-DS:
-
+Spacecraft-DS:
+------
       1）Spacecraft-DS has 10000 satellite images with five distinctive components and 33 different satellites.
       
       2）Spacecraft-DS can be downloaded here
