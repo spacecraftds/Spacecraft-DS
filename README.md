@@ -4,16 +4,14 @@ News：
 ------
       1）2023.11.23 Update 1602 spacecraft images.
       
-      2）
+      2）2023.09.26 Our paper is submitted to Ieee Sensors Journal
 Spacecraft-DS:
 ------
-      1）Spacecraft-DS has 10000 satellite images with five distinctive components and 33 different satellites.
+      1）Spacecraft-DS has 1602 satellite images with 9 key components.
       
       2）Spacecraft-DS can be downloaded here
 
-      3）Baidu disk Password:Spacecraft
-
-      4）For more information, please check our [Paper]
+         Baidu disk:  Password:Spacecraft
 
 Abstract:
 ------
