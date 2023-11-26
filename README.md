@@ -161,7 +161,7 @@ Our project is based on the following open-source projects.
 If you find this paper useful in your research, please consider cite:
 
 ```
-@Article{ZYP2022UESD,
+@Article{
 title={Spacecraft-DS: A Spacecraft Dataset for Key Components Detection and Segmentation via Hardware-in-the-loop Capture},
 author={Yi Cao, Jinzhen Mu, Xianghong Cheng, and Fengyu Liu},
 }
