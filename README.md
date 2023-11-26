@@ -143,31 +143,27 @@ mmdetection/configs/
 ## Training
 
 ```shell
-bash tools/dist_train.sh configs/convnext/upernet_convnext_base_fp16_512x512_160k_ade20k.py 4
+bash tools/dist_train.sh configs/**/**.py 
 ```
 
 ## Val and Test
 
-After the training, you will find a folder named work_dirs/upernet_convnext_base_fp16_512x512_160k_ade20k
+After the training, you will find a folder named work_dirs/**
 
-```shell
-bash ./tools/dist_test.sh configs/convnext/upernet_convnext_base_fp16_512x512_160k_ade20k.py workdirs/upernet_convnext_base_fp16_512x512_160k_ade20k/iter_80000.pyth  --eval mIoU --eval_options "imgfile_prefix=./UESD_results"
-```
+
 
 ## Acknowledgements
 
 Our project is based on the following open-source projects.
 * [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
-
+* [MMDetection](https://github.com/openmmlab/mmdetection/tree/v2.2.1)
 ## Citation
 If you find this paper useful in your research, please consider cite:
 
 ```
 @Article{ZYP2022UESD,
-title={Intelligent Recognition of Spacecraft Components from Photorealistic Images Based on Unreal Engine 4},
-author={Yunpeng Zhao, Rui Zhong and Linyan Cui},
-journal={Advances in Space Research},
-year={2022}
+title={Spacecraft-DS: A Spacecraft Dataset for Key Components Detection and Segmentation via Hardware-in-the-loop Capture},
+author={Yi Cao, Jinzhen Mu, Xianghong Cheng, and Fengyu Liu},
 }
 ```
 
