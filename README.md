@@ -58,14 +58,9 @@ The detection and segmentation of key spacecraft components is a crucial prerequ
 
 ## Experiment results
 
-* Our dataset
-<p align="center"><img src="figure/result3.png" width="800"></p>
+![](https://github.com/spacecraftds/Spacecraft-DS/blob/main/figure/16000020.jpg)
 
-* [URSO](https://pedropro.github.io/project/urso/) dataset
-<p align="center"><img src="figure/urso_results.png" width="800"></p>
 
-* NASA Results
-<p align="center"><img src="figure/nasa.png" width="800"></p>
 
 ---
 
