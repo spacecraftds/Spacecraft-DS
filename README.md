@@ -15,10 +15,10 @@
 
 ## Spacecraft detection and segmentation models
 
-* TheSpacecraft detection and segmentation models and their equipments diagrams in our paper could be downloaded here
+* The Spacecraft detection and segmentation models in our paper could be downloaded here
 
 * Detection
-* [Baidu disk](https://pan.baidu.com/s/15iQRhna1JqZQ2r8gI-O4GA)  Password：BUAA
+* [Baidu disk](https://pan.baidu.com/s/15iQRhna1JqZQ2r8gI-O4GA)  Password：Spacecraft
 * Segmentation
 * [Baidu disk](https://drive.google.com/file/d/1Sn8xSardyq-7ZL3bU_3CHaXIM8ZFRRr8/view?usp=sharing)
 * If you can not download, please contact caoyi20@seu.edu.cn
@@ -30,28 +30,29 @@ For more information, please check our paper(Spacecraft-DS: A Spacecraft Dataset
 The detection and segmentation of key spacecraft components is a crucial prerequisite for the successful execution of on-orbit capture tasks. However, the existing spacecraft datasets are plagued by several problems. These include a lack of a unified dataset for component detection and segmentation, a lack of consideration of the motion states of the spacecraft, and a lack of consideration of extreme illuminations. These problems hinder the development of related research. In response to the above problems, this paper aims to bridge this gap by releasing a dataset for detecting and segmenting key spacecraft components. In contrast to synthetic images, the proposed dataset is built via hardware-in-the-loop capture. The dataset contains 2 types of spacecrafts, 9 types of key components, 3 types of illuminations (normal illumination, low illumination, and high saturation), and 2 types of motion states (approaching phase and hovering phase). Furthermore, we conduct extensive experiments on Spacecraft-DS with state-of-the-art methods for detection and segmentation tasks and provide comprehensive analysis. In addition, the dataset can also be used to evaluate many computer vision tasks, such as small object detection, etc. 
 <br><br>
 
-## Detection Benchmark
-| Method | BG | Panel | Antenna | Instrument | Thruster | Optical Payload | mIoU | mIoU(no bg) |
-| :---: | :---: | :---: | :---: | :---: | :---: |:---: | :---: | :---: |
-| Danet| 99.6 | 85.69 | 77.65 | 54.24 | 46.16 | 64.64 | 71.33 | 65.68 |
-| Deeplabv3+| 99.83 | 88.67 | 84.98 | 66.53 | 62.25 | 76.99 | 76.99 | 75.88 |
-| Ocrnet| 99.69 | 89.03| 83.33 | 63.3 | 56.21 | 73.9 | 77.58 | 73.15 |
-| Sfnet| 99.74 | 89.51 | 86.6 | 68.77 | 67.66 | 78.42 | 81.78 | 78.19 |
-| VAN-B| 99.77 | 90.97 | 84.99 | 71.24 | 66.65 | 78.36 | 82.0 | 78.44 |
-| ConvNext-B| 99.83 | 93.85 | 89.66 | 72.98 | 72.92 | 83.87 | 85.52 | 82.66 |
-| Our method | 99.85 | 94.18 | 89.85 | 77.06 | 76.19 | 85.71 | 87.14 | 84.60 |  
+## Detection Benchmark(AP)
+| Model | 2 |3| 5 | 11 | 12 |13| 14| 15| 17|
+| :---: | :---: | :---: | :---: | :---: | :---: |:---: | :---: | :---: | :---: |
+| Faster R-CNN |0.607 | 0.708| 0.644 | 0.629| 0.884| 0.696| 0.792 | 0.847 | 0.708|
+| Cascade R-CNN| 0.609 | 0.725 | 0.665| 0.632 | 0.923 | 0.713 | 0.815 | 0.87|0.747|
+| Grid R-CNN|  0.602| 0.702 | 0.648| 0.621 |0.874 | 0.707 | 0.787 | 0.823 |0.724|
+| Sparse R-CNN| 0.561 | 0.702 | 0.618| 0.574 | 0.920 | 0.668 | 0.798 | 0.896 |0.700|
+|SSD| 0.565 | 0678 | 0.614| 0.595 | 0.835 | 0.674 | 0.749 | 0.813|0.653|
+| YOLOV3| 0.450 | 0.500 | 0.433| 0.475 | 0.677 | 0.494 | 0.357 | 0.553 | 0.423 |
+| YOLOF | 0.541 | 0.671 | 0.572| 0.536 | 0.847 | 0.633 | 0.728 | 0.801 | 0.617 |
+| YOLOX |  0.575 | 0.709 | 0.627| 0.605 | 0.904 | 0.684 | 0.757 | 0.822 | 0.726 |
 
 ---
-## Segmentation Benchmark
-| Method | BG | Panel | Antenna | Instrument | Thruster | Optical Payload | mIoU | mIoU(no bg) |
-| :---: | :---: | :---: | :---: | :---: | :---: |:---: | :---: | :---: |
-| Danet| 99.6 | 85.69 | 77.65 | 54.24 | 46.16 | 64.64 | 71.33 | 65.68 |
-| Deeplabv3+| 99.83 | 88.67 | 84.98 | 66.53 | 62.25 | 76.99 | 76.99 | 75.88 |
-| Ocrnet| 99.69 | 89.03| 83.33 | 63.3 | 56.21 | 73.9 | 77.58 | 73.15 |
-| Sfnet| 99.74 | 89.51 | 86.6 | 68.77 | 67.66 | 78.42 | 81.78 | 78.19 |
-| VAN-B| 99.77 | 90.97 | 84.99 | 71.24 | 66.65 | 78.36 | 82.0 | 78.44 |
-| ConvNext-B| 99.83 | 93.85 | 89.66 | 72.98 | 72.92 | 83.87 | 85.52 | 82.66 |
-| Our method | 99.85 | 94.18 | 89.85 | 77.06 | 76.19 | 85.71 | 87.14 | 84.60 |  
+## Segmentation Benchmark(MIoU)
+| Model | 2 |3| 5 | 11 | 12 |13| 14| 15| 17| MIoU|
+| :---: | :---: | :---: | :---: | :---: | :---: |:---: | :---: | :---: | :---: | :---: |
+| FCN |0.991 | 0.780| 0.792| 0.788| 0.957| 0.821| 0.925 | 0.872 | 0.969|0.877|
+| PSPNet| 0.990 | 0.740 | 0.740| 0.777 | 0.956 | 0.788 | 0.925 | 0.872|0.959|0.861|
+| DeeplabV3+|  0.981| 0.618 | 0.558| 0.718 |0.906 | 0.760 | 0.924| 0.862 |0.936|0.807|
+| DANet| 0.991 | 0.770 | 0.782| 0.767 | 0.960 | 0.785 | 0.927 | 0.875 |0.943|0.867|
+|CGNet| 0.985 | 0.668 | 0.548| 0.729 | 0.943 | 0.783 | 0.932 | 0.860 |0.908|0.817|
+| OCRNet| 0.989 | 0.727 | 0.642| 0.741 | 0.956 | 0.756 | 0.936 | 0.869 | 0.959 |0.842|
+| BiSeNetV2 | 0.989 | 0.946| 0.724| 0.708 | 0.953 | 0.739 | 0.917 | 0.862 | 0.945 |0.837|
 
 ---
 
