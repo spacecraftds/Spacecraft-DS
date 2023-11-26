@@ -139,9 +139,6 @@ mmdetection/mmdet/datasets/coco.py
 bash tools/dist_train.sh configs/cascade_rcnn/cascade_mask_rcnn_r50_fpn_1x_coco.py
 ```
 
-## Val and Test
-
-After the training, you will find a folder named work_dirs/**
 
 
 
