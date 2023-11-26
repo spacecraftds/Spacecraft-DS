@@ -114,20 +114,32 @@ mmdetection
 Our project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and [mmdetection](https://github.com/openmmlab/mmdetection/tree/v2.2.1)).
 Replace the files in mmsegmentation with our project.
 
-The most important files are :
+The most important files are( spacecraft segmentation ):
 ```shell
-configs/convnext/upernet_convnext_base_fp16_512x512_160k_ade20k.py
+mmsegmentation/configs/
 
-configs/base/datasets/cityscapes.py
+mmsegmentation/configs/
 
-configs/base/models/upernet_convnext.py 
+mmsegmentation/configs/
 
-mmseg/models/decode_heads/LUper_head.py
+mmsegmentation/configs/
 
-mmseg/datasets/cityscapes.py
+mmsegmentation/configs/
 
 ```
+The most important files are( spacecraft detection ):
+```shell
+mmdetection/configs/
 
+mmdetection/configs/
+
+mmdetection/configs/
+
+mmdetection/configs/
+
+mmdetection/configs/
+
+```
 ## Training
 
 ```shell
