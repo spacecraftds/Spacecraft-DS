@@ -69,7 +69,7 @@ For this project, we follow the settings of mmsegmentation/mmdetection.
 
 ```shell
 conda create --name open-mmlab python=3.8 -y
-conda activate open-mmlab
+conda activate openmmlab
 ```
 
 Find the correct pytorch version of your cuda version from [here](https://pytorch.org/get-started/previous-versions/).
@@ -116,34 +116,27 @@ Replace the files in mmsegmentation with our project.
 
 The most important files are( spacecraft segmentation ):
 ```shell
-mmsegmentation/configs/
+mmsegmentation/configs/hrnet/fcn_hr18_4xb2-40k_cityscapes-512x1024.py
+mmsegmentation/configs/_base_/datasets/cityscapes.py
+mmsegmentation/configs/_base_/models/fcn_hr18.py
+mmsegmentation/datasets/cityscapes.py
 
-mmsegmentation/configs/
-
-mmsegmentation/configs/
-
-mmsegmentation/configs/
-
-mmsegmentation/configs/
 
 ```
 The most important files are( spacecraft detection ):
 ```shell
-mmdetection/configs/
+mmdetection/configs/hrnet/cascade_rcnn_hrnetv2p_w18_20e_coco.py
+mmdetection/configs/_base_/datasets/coco_detection.py
+mmdetection/configs/_base_/models/cascade_rcnn_r50_fpn.py
+mmdetection/mmdet/datasets/coco.py
 
-mmdetection/configs/
 
-mmdetection/configs/
-
-mmdetection/configs/
-
-mmdetection/configs/
 
 ```
 ## Training
 
 ```shell
-bash tools/dist_train.sh configs/**/**.py 
+bash tools/dist_train.sh configs/cascade_rcnn/cascade_mask_rcnn_r50_fpn_1x_coco.py
 ```
 
 ## Val and Test
