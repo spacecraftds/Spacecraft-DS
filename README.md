@@ -65,28 +65,23 @@ The detection and segmentation of key spacecraft components is a crucial prerequ
 ---
 
 ## Setup Environment
-For this project, we follow the settings of mmsegmentation.
+For this project, we follow the settings of mmsegmentation/mmdetection.
 
 ```shell
-conda create --name open-mmlab python=3.7 -y
+conda create --name open-mmlab python=3.8 -y
 conda activate open-mmlab
 ```
 
 Find the correct pytorch version of your cuda version from [here](https://pytorch.org/get-started/previous-versions/).
 
-For our computer, the cuda version is 10.1. 
+
 And the mmcv version can be found [here](https://github.com/open-mmlab/mmcv/blob/master/README_zh-CN.md).
 
-```shell
-pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-pip install mmcv-full==1.6.0 -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.8.0/index.html
-pip install mmsegmentation==0.27.0
-pip install mmcls
-```
+
 
 
 ## Setup Datasets
-Download the UESD dataset and extract the folder them to data/cityscapes. The final folder structure should look like this:
+Download the Spacecraft-DS dataset and extract the folder them to data/cityscapes or data/coco. The final folder structure should look like this:
 ```none
 mmsegmentation
 ├── configs
@@ -100,12 +95,23 @@ mmsegmentation
 │   │   │   ├── val
 ├── ...
 ```
-
-
+```none
+mmdetection
+├── mmdet
+├── tools
+├── configs
+├── data
+│   ├── coco
+│   │   ├── annotations
+│   │   ├── train2017
+│   │   ├── val2017
+│   │   ├── test2017
+├── ...
+```
 
 ## Framework Structure
 
-Our project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
+Our project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and [mmdetection](https://github.com/openmmlab/mmdetection/tree/v2.2.1)).
 Replace the files in mmsegmentation with our project.
 
 The most important files are :
