@@ -8,7 +8,7 @@
 
 * Spacecraft-DS  contains 2 types of spacecrafts, 9 types of key components, 3 types of illuminations (normal illumination, low illumination, and high saturation), and 2 types of motion states (approaching phase and hovering phase) <br><br>
 * Spacecraft-DS can be downloaded here
-* [Baidu disk](https://pan.baidu.com/s/16LHmym9-RBQ7trlmRnkI4Q)  Password:Spacecraft
+* [Google Drive](https://drive.google.com/drive/folders/1UXrXcvKLCvwA5NOAPM-nEGEy8tmzyoXN?usp=sharing)
 
 
 ---
@@ -18,9 +18,9 @@
 * The Spacecraft detection and segmentation models in our paper could be downloaded here
 
 * Detection
-* [Baidu disk](https://pan.baidu.com/s/15iQRhna1JqZQ2r8gI-O4GA)  Password：Spacecraft
+* [Google Drive](https://drive.google.com/drive/folders/1oQkFZr20_zgxjooql0zshWDvfQE1-BfX?usp=drive_link)
 * Segmentation
-* [Baidu disk](https://drive.google.com/file/d/1Sn8xSardyq-7ZL3bU_3CHaXIM8ZFRRr8/view?usp=sharing)
+* [Google Drive](https://drive.google.com/drive/folders/1o4776DcIveGvTgQIsZ-wukNaZhKqe5Km?usp=drive_link)
 * If you can not download, please contact caoyi20@seu.edu.cn
 
 ---
