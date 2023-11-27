@@ -1,7 +1,7 @@
 ### Spacecraft-DS: A Spacecraft Dataset for Key Components Detection and Segmentation via Hardware-in-the-loop Capture
 
 ## News
-* 2022.11.23 Update 500 Spacecraft images.
+* 2022.11.23 Update 125 Spacecraft images.
 * 2022.9.26 Our paper is submmited to IEEE Sensors Journa!
 
 ## Spacecraft-DS
