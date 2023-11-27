@@ -136,7 +136,7 @@ mmdetection/mmdet/datasets/coco.py
 ## Training
 
 ```shell
-bash tools/dist_train.sh configs/cascade_rcnn/cascade_mask_rcnn_r50_fpn_1x_coco.py
+bash tools/dist_train.sh configs/hrnet/cascade_rcnn_hrnetv2p_w18_20e_coco.py
 ```
 
 
